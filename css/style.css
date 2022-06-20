@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Hind', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+.test {
+  background-color: red;
+}
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  
+}
+#portNavbar .nav-link::after {
+  width:0;
+  content: '';
+  height: 5px;
+  background: rgb(24, 99, 58);
+  display: block;
+  transition: all .5s;
+}
+/* sau hover  */
+#portNavbar .nav-link:hover::after {
+  width: 100%;
+}
+#portNavbar .active .nav-link::after {
+  width: 100%;
+}
+
+/* carousel  */
+/* b1 chrnh kich thuoc avt  */
+/* b2 chinh anh nen  */
+/* b3 chinh caption  */
+/* b4 chinh hinh dajng indicators  */
+.porAvatar {
+  width: 140px;
+  border-radius: 50%;
+}
+#portCarouselID .carousel-item {
+  height: 100vh;
+}
+
+#portCarouselID .carousel-item>img{
+height: 100%;
+object-fit: cover;
+filter: brightness(70%);
+}
+/* b3  */
+/* cwn giua voi the position absolute  */
+
+#portCarouselID .carousel-caption {
+  top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+#portCarouselID .carousel-indicators li {
+  width: 20px;
+height: 20px;
+border-radius: 50%;
+}
+#portCarouselID .carousel-indicators .active {
+  background-color: rgb(14, 92, 7);
+}
+
+/* project  */
+
+.top {
+margin-bottom: 30px;
+}
+.project__content .nav {
+  justify-content: center;
+}
+
+
+/* .award  */
+.award {
+  padding: 80px 0;
+  background-image: url(../img/memphis_3.png);
+background-position: bottom left;
+background-repeat: no-repeat;
+background-size: 50% auto;
+position: relative;
+}
+.award__overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../img/memphis_3.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  position: absolute;
+  opacity: .5;
+}
+.award__left {
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.377);
+  background-color: rgba(255, 255, 255, 0.18);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(3px);
+}
+
+
+
+
+
+
+/* REPONSIVE  */
+@media screen and (max-width: 992px){
+header .navbar-toggler {
+  background-color: rgb(32, 105, 50);
+
+}
+header .navbar-nav {
+  background-color: white;
+
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+  color: black;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+  color: blue;
+}
+
+}
