@@ -133,7 +133,11 @@ header .navbar-nav {
 }
 
 .navbar-dark .navbar-nav .active>.nav-link {
-  color: blue;
+  color: green;
+}
+
+.test-git {
+  color: red
 }
 
 }
